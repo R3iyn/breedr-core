@@ -11,9 +11,4 @@ public class BreedrCoreApplication {
     public static void main(String[] args) {
         SpringApplication.run(BreedrCoreApplication.class, args);
     }
-
-    @Bean
-    public BCryptPasswordEncoder bCryptPasswordEncoder() {
-        return new BCryptPasswordEncoder();
-    }
 }

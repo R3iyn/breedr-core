@@ -1,5 +1,6 @@
 package eu.breedr.breedrcore.services;
 
+import eu.breedr.breedrcore.domain.User;
 import eu.breedr.breedrcore.dto.UserInfoDto;
 import eu.breedr.breedrcore.dto.UserRegistrationDto;
 
@@ -14,4 +15,12 @@ public interface UserService {
      * @param user the user to register
      */
     UserInfoDto register(UserRegistrationDto user);
+
+    /**
+     * Find a user by their username
+     *
+     * @param username the username
+     * @return the {@link User}
+     */
+    User findUser(String username);
 }

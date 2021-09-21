@@ -1,5 +1,6 @@
 package eu.breedr.breedrcore.domain;
 
+import eu.breedr.breedrcore.enums.Role;
 import lombok.*;
 
 import javax.persistence.*;
@@ -22,4 +23,7 @@ public class User {
     private String email;
 
     private String password;
+
+    @Enumerated(EnumType.STRING)
+    private Role role;
 }

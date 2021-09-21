@@ -4,15 +4,13 @@ import eu.breedr.breedrcore.dto.UserInfoDto;
 import eu.breedr.breedrcore.dto.UserRegistrationDto;
 import eu.breedr.breedrcore.services.UserService;
 import org.springframework.validation.Errors;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import javax.validation.ValidationException;
 
 @RestController
+@RequestMapping("/user")
 public class UserController {
 
     private final UserService userService;
