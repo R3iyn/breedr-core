@@ -1,6 +1,6 @@
 package eu.breedr.breedrcore.validators;
 
-import eu.breedr.breedrcore.dto.UserRegistrationDto;
+import eu.breedr.breedrcore.dto.user.UserRegistrationDto;
 import eu.breedr.breedrcore.validators.annotations.PasswordMatches;
 
 import javax.validation.ConstraintValidator;

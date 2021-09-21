@@ -1,4 +1,4 @@
-package eu.breedr.breedrcore.dto;
+package eu.breedr.breedrcore.dto.user;
 
 
 import lombok.Getter;

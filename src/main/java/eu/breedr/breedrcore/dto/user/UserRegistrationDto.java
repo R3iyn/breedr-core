@@ -1,4 +1,4 @@
-package eu.breedr.breedrcore.dto;
+package eu.breedr.breedrcore.dto.user;
 
 import eu.breedr.breedrcore.validators.annotations.PasswordMatches;
 import eu.breedr.breedrcore.validators.annotations.ValidEmail;
@@ -27,6 +27,10 @@ public class UserRegistrationDto {
     @NotEmpty
     private String password;
     private String matchingPassword;
+
+    @NotNull
+    @NotEmpty
+    private String username;
 
     @NotNull
     @NotEmpty

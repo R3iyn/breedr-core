@@ -1,6 +1,6 @@
 package eu.breedr.breedrcore.controlleradvices;
 
-import eu.breedr.breedrcore.dto.ValidationErrorDto;
+import eu.breedr.breedrcore.dto.validation.ValidationErrorDto;
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;

@@ -1,4 +1,4 @@
-package eu.breedr.breedrcore.dto;
+package eu.breedr.breedrcore.dto.validation;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

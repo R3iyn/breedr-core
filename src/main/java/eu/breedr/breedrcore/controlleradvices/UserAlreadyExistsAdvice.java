@@ -16,7 +16,7 @@ public class UserAlreadyExistsAdvice {
     @ResponseBody
     @ExceptionHandler(UserAlreadyExistsException.class)
     @ResponseStatus(HttpStatus.FORBIDDEN)
-    public String processValidationError(MethodArgumentNotValidException ex) {
+    public String processUserAlreadyExists() {
         return "A user with that email already exists";
     }
 }

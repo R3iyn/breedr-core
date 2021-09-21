@@ -1,8 +1,8 @@
 package eu.breedr.breedrcore.services.impl;
 
 import eu.breedr.breedrcore.domain.User;
-import eu.breedr.breedrcore.dto.UserInfoDto;
-import eu.breedr.breedrcore.dto.UserRegistrationDto;
+import eu.breedr.breedrcore.dto.user.UserInfoDto;
+import eu.breedr.breedrcore.dto.user.UserRegistrationDto;
 import eu.breedr.breedrcore.exceptions.UserAlreadyExistsException;
 import eu.breedr.breedrcore.repositories.UserRepository;
 import eu.breedr.breedrcore.repositories.UserRoleRepository;
