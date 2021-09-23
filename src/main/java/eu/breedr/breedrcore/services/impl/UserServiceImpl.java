@@ -30,7 +30,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserInfoDto register(final UserRegistrationDto userRegistrationDto) throws UserAlreadyExistsException {
-        if (userAlreadyExists(userRegistrationDto.getEmail())) {
+        if (findUser(userRegistrationDto.getEmail()) != null) {
             throw new UserAlreadyExistsException("There already is a user with this email");
         }
 
@@ -49,9 +49,5 @@ public class UserServiceImpl implements UserService {
     @Override
     public User findUser(final String username) {
         return userRepository.findByEmail(username);
-    }
-
-    private boolean userAlreadyExists(String email) {
-        return userRepository.findByEmail(email) != null;
     }
 }
