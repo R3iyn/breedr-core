@@ -46,7 +46,7 @@ public class UserController {
 
     @PostMapping("/login")
     @ResponseBody
-    public ResponseEntity<?> login(@RequestBody @Valid UserAuthenticationRequestDto userAuthenticationRequestDto, final Errors errors) {
+    public ResponseEntity<UserAuthenticationResponseDto> login(@RequestBody @Valid UserAuthenticationRequestDto userAuthenticationRequestDto, final Errors errors) {
         if (errors.hasErrors()) {
             throw new ValidationException("Validation of login has failed");
         }

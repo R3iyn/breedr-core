@@ -52,7 +52,6 @@ public class UserServiceImplTest {
     @Test
     public void testRegister() {
         UserRegistrationDto userRegistrationDto = mock(UserRegistrationDto.class);
-        when(userRegistrationDto.getPassword()).thenReturn("password");
 
         User user = mock(User.class);
         when(user.getPassword()).thenReturn("password");
